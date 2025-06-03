@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XacmazProgramist.az – Telefon Yazılım Xidməti</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #222; margin: 0; padding: 0; }
+    header, footer { background-color: #1a1a1a; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    .container { max-width: 900px; margin: auto; padding: 2rem; }
+    .service { background-color: white; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    .button { background-color: #28a745; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; text-decoration: none; display: inline-block; }
+    .lang-switch { float: right; margin-top: -2.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>XacmazProgramist.az</h1>
+    <p>Telefon yazılım xidmətləri – Peşəkar və təhlükəsiz</p>
+    <div class="lang-switch">
+      <a href="#" onclick="switchLang('az')">AZ</a> | 
+      <a href="#" onclick="switchLang('tr')">TR</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="service">
+      <h2 id="service-title">Xidmətlərimiz</h2>
+      <ul id="services-list">
+        <li>🔓 FRP kilid silinməsi</li>
+        <li>📦 ROM yükləmə və sistem düzəldilməsi</li>
+        <li>🔧 Root və dil dəyişiklikləri</li>
+        <li>🌍 Uzaqdan təhlükəsiz xidmət</li>
+      </ul>
+    </section>
+
+    <section class="service">
+      <h2>Əlaqə</h2>
+      <p>Sualınız var? Xidmət sifariş etmək istəyirsiniz?</p>
+      <a href="https://wa.me/994553997677" class="button">WhatsApp ilə əlaqə saxla</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 XacmazProgramist.az | +994 55 399 76 77</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      if (lang === 'tr') {
+        document.getElementById('service-title').textContent = 'Hizmetlerimiz';
+        document.getElementById('services-list').innerHTML = `
+          <li>🔓 FRP kilidi kaldırma</li>
+          <li>📦 ROM yükleme ve sistem onarımı</li>
+          <li>🔧 Root ve dil ayarları</li>
+          <li>🌍 Uzaktan güvenli hizmet</li>`;
+      } else {
+        document.getElementById('service-title').textContent = 'Xidmətlərimiz';
+        document.getElementById('services-list').innerHTML = `
+          <li>🔓 FRP kilid silinməsi</li>
+          <li>📦 ROM yükləmə və sistem düzəldilməsi</li>
+          <li>🔧 Root və dil dəyişiklikləri</li>
+          <li>🌍 Uzaqdan təhlükəsiz xidmət</li>`;
+      }
+    }
+  </script>
+</body>
+</html>
